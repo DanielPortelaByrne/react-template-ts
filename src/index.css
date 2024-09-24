@@ -18,8 +18,10 @@
   4. Improve text rendering
 */
 body {
+  font-size: large;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  font-family: 'Patrick Hand', cursive'
 }
 /*
   5. Improve media defaults
@@ -52,6 +54,14 @@ h4,
 h5,
 h6 {
   overflow-wrap: break-word;
+  text-align: left;
+}
+
+.header-border {
+  width: 100%;
+  max-width: 850px;
+  border-bottom: 3px solid black;
+  margin-bottom: 20px;
 }
 /*
   8. Create a root stacking context
@@ -67,4 +77,28 @@ h6 {
   color: #333;
   margin: 20px;
   padding: 0;
+}
+
+.table-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+table {
+  width: 100%;
+  max-width: 850px;
+  border-spacing: 0 10px;
+}
+
+th {
+  padding: 12px 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+td {
+  padding: 12px 10px;
+  text-align: left;
 }
